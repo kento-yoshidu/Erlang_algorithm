@@ -36,3 +36,11 @@ Archived.args = {
     state: 'TASK_ARCHIVED',
   },
 };
+
+export const Hoge = Template.bind({});
+Hoge.args = {
+  task: {
+    ...Default.args.task,
+    state: 'TASK_ARCHIVED',
+  },
+};
