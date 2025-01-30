@@ -1,3 +1,5 @@
+% https://atcoder.jp/contests/abc087/tasks/abc087_a
+
 -module(a).
 -export([main/0]).
 
