@@ -1,20 +1,16 @@
 ```erlang
 -module('Main').
+-import(lists, [max/1, min/1]).
 -export([main/1]).
 
 func(A, B) ->
-    RevB = lists:reverse(B),
-
-    case A =:= RevB of
-        true -> "YES";
-        false ->"NO"
-    end.
+    A + B.
 
 main(_) ->
     % 数値 = d, 文字列 = s
-    {ok, [S]} = io:fread("", "~s"),
-    {ok, [T]} = io:fread("", "~s"),
+    {ok, [A]} = io:fread("", "~d"),
+    {ok, [B]} = io:fread("", "~d"),
 
-    io:format("~s~n", [func(S, T)]),
+    io:format("~p~n", [func(A, B)]),
     halt().
 ```
