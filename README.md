@@ -6,7 +6,6 @@
 func(N, K) when N rem K =:= 0 -> 0;
 func(_, _) -> 1.
 
-
 main(_) ->
     % 数値 = d, 文字列 = s
     {ok, [N]} = io:fread("", "~d"),
